@@ -1,0 +1,45 @@
+.textpic.textpic-intext-left,
+.textpic.textpic-intext-right {
+    display: block;
+}
+
+
+.textpic.textpic-intext-left,
+.textpic.textpic-intext-right {
+    > .textmedia-item,
+    > .textpic-item {
+        display: block;
+        width: inherit;
+    }
+}
+
+@include media-breakpoint-up('md') {
+    .textmedia.textmedia-intext-right,
+    .textmedia.textmedia-intext-left,
+    .textpic.textpic-intext-right,
+    .textpic.textpic-intext-left {
+        .textmedia-item,
+        .textpic-item {
+            width: auto;
+        }
+
+        .textmedia-gallery,
+        .textpic-gallery {
+            width: 50%;
+        }
+    }
+    .textmedia.textmedia-intext-right,
+    .textpic.textpic-intext-right {
+        .textmedia-gallery,
+        .textpic-gallery {
+            float: right;
+        }
+    }
+    .textmedia.textmedia-intext-left,
+    .textpic.textpic-intext-left {
+        .textmedia-gallery,
+        .textpic-gallery {
+            float: left;
+        }
+    }
+}

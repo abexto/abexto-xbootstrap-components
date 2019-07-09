@@ -1,0 +1,115 @@
+##############
+#### PAGE ####
+##############
+
+page {
+    includeCSS {
+        # Overrides the standard theme.scss of bootstrap_package
+        # The original theme.scss is included via this custom css
+        theme = EXT:abexto_xbootstrap_components/Resources/Public/Scss/Theme/theme.scss
+    }
+}
+
+##################################################
+### TEMPLATE SETTING                           ###
+##################################################
+lib.contentElement = FLUIDTEMPLATE
+lib.contentElement {
+    templateRootPaths {
+        4 = EXT:abexto_xbootstrap_components/Resources/Private/Templates/Bootstrap4/ContentElements/
+    }
+    partialRootPaths {
+        4 = EXT:abexto_xbootstrap_components/Resources/Private/Templates/Bootstrap4/Partials/
+    }
+    layoutRootPaths {
+        4 = EXT:abexto_xbootstrap_components/Resources/Private/Templates/Bootstrap4/Layouts/
+    }
+    
+}
+
+#########################
+### RESPONSIVE IMAGES ###
+#########################
+lib.contentElement.settings.responsiveimages.contentelements {
+   textpic {
+        intext_left {
+            multiplier {
+                default = 0.5
+                large = 0.5
+                medium = 0.5
+            }
+            gutters {
+                default = 40
+                large = 40
+                medium = 40
+            }
+        }
+        intext_right {
+            multiplier {
+                default = 0.5
+                large = 0.5
+                medium = 0.5
+            }
+            gutters {
+                default = 40
+                large = 40
+                medium = 40
+            }
+        }
+    }
+    textmedia {
+        intext_left {
+            multiplier {
+                default = 0.5
+                large = 0.5
+                medium = 0.5
+            }
+            gutters {
+                default = 40
+                large = 40
+                medium = 40
+            }
+        }
+        intext_right {
+            multiplier {
+                default = 0.5
+                large = 0.5
+                medium = 0.5
+            }
+            gutters {
+                default = 40
+                large = 40
+                medium = 40
+            }
+        }
+    }
+}
+
+##################################################
+### TEXTPIC TYPES                              ###
+##################################################
+
+tt_content.textpic.templateName.stdWrap.cObject {
+  17 = TEXT
+  17.value = TextpicIntextRight
+
+  18 = TEXT
+  18.value = TextpicIntextLeft
+}
+
+##################################################
+### TEXTMEDIA TYPES                            ###
+##################################################
+
+
+tt_content.textmedia.templateName.stdWrap.cObject {
+  17 = TEXT
+  17.value = TextmediaIntextRight
+
+  18 = TEXT
+  18.value = TextmediaIntextLeft
+}
+
+
+
+

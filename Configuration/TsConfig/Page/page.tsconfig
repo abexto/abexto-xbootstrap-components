@@ -1,0 +1,3 @@
+# 17 and 18 represents floated images. bootstrap_packge removes them by default. 
+# We remove them from the remove list (IOW, bring them back)
+TCEFORM.tt_content.imageorient.removeItems := removeFromList(17,18)

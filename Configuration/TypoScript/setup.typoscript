@@ -1,0 +1,5 @@
+####################################
+#### INCLUDE ALL DEFAULT SETUPS ####
+####################################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:abexto_xbootstrap_components/Configuration/TypoScript/Bootstrap4/ContentElements/setup.typoscript">
+
